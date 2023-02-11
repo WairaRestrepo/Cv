@@ -1,0 +1,618 @@
+/*https://uigradients.com/#Yoda  -- para el gradient */
+:root{
+    --white-text:#fff;
+    --purple-text:#642a73;
+    
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box ;/*incluye el pading y el border para calcular las dimensiones de los elementos */
+   
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+.contenedor{
+    padding:60px 0;
+    width:90%;
+    max-width:1000px;
+    margin:auto;/*para centrarlo todo */
+    overflow: hidden;/*hace que el navegador oculte todos los contenidos que se salen de la caja del elemento*/
+    
+
+
+}
+.titulo{
+    color: #642a73;
+    font-size:30px;
+    text-align: center;
+    margin-bottom:60px;/*distancia del div superor*/
+
+}
+/*Header*/
+header{
+width: 100%;
+height:600px;
+background: #bc4e9c;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../img/pizap.jpg);
+background: linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../img/pizap.jpg); 
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-size: cover;/*cubriendo, el área de posicionamiento de fondo*/
+background-attachment: fixed;/*determina si la posición de la imagen de fondo será fija dentro de la pantalla o se desplazará con su bloque contenedor.*/
+position: relative;
+}
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+    justify-content:space-around
+    
+}
+nav>a{
+    color:#fff;
+    font-weight:300;/*mas delgada*/
+    text-decoration:none;
+    font-size:20 px;
+    margin:35px;/* lo se para el uno del otro */
+    
+
+}
+
+nav>a:hover{
+
+    /*text-decoration:underline;*//*poner una raya debajo del menu*/
+    color: #4e0439;
+    font-weight:700;/*mas delgada*/
+    border-bottom:2px solid;
+    text-shadow: 1px 0px #e909c4;
+    
+}
+header .textos-header{
+    display: flex;/*estructuras de una sóla dimensión(eje X)*/
+    height: 430px;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;/* para que el texto no este pagdo*/
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size:50px;
+    color: #fff;
+}
+
+.textos-header h2{
+    font-size:30px;
+    font-weight: 300;
+    color: #fff;
+}
+
+
+.wave{
+    position:absolute;/*hace que un elemento se coloque respecto a su contenedor posicionado mas cercano*/
+    bottom:0%;
+    width:100%;
+    color: #080808;
+}
+.circulofoto{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin:auto;
+    filter:drop-shadow(26px 6px 55px #800040 );
+    
+     
+}
+
+.main{
+    padding-top:60px;
+}
+
+/*************************************Experiencia laboral ****************************/
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;/* que reparta el esacio */
+    
+}
+
+.imagen-about-us{
+    width:48%;
+}
+.sobre-nosotros .contenido-textos{
+    width: 48%;  
+}
+
+.contenido-textos h3{
+    margin-bottom:15px;
+}
+.contenido-textos h3 span{
+    background:#4d0686 ;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align:center;
+    width: 30px;
+    height: 30px;/* para que no se vea ovalado */
+    padding:2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0,0,.5);
+    margin-right:5px;
+}
+.contenido-textos p{
+    padding:0px 0px 30px 15px;
+    font-weight: 300;
+    text-align:justify;
+}
+/*para cambio de colors*/
+.colors{
+    position:absolute;
+    right:0;
+    padding:10px;
+    background: rgb(247, 209, 209);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius:45%;
+}
+.colors span{
+    position: relative;
+    width:15px;
+    height:15px;
+    background: var(--clr);
+    margin: 10px ;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.colors span.active{
+    border: 2px solid #333;
+    scale: 1.0;
+
+}
+/**********************************Estudios****************************/
+.portafolio{
+    background: #f2f2f2;
+}
+.galeria-port{
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;/* para que este uno debajo del otro*/
+    gap:3px;/*especifica los canales entre las filas y las columnas de la cuadrícula*/
+
+
+}
+.imagen-port{
+    width: 24%;
+    margin-bottom:10px;
+}
+
+/*cards studios*/
+.top-row background-top-row{
+    background-color:rgba(52,3,45,0.3);
+    backdrop-filter:blur(.4rem);
+
+}
+
+.estudiocontenedor h2{
+   padding-top:5%;
+}
+
+.estudiocontenedor{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+    background: #42275a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #734b6d, #42275a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(309, 21%, 37%, 0.671), hsla(272, 40%, 25%, 0.664)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    align-items: center;   
+    
+}
+.Containerr{
+    
+    justify-content: center;
+    min-height:10vh;
+    align-items: center;
+    display:inline-flex;
+    margin-left: 18%;
+
+    
+  
+}
+
+.card{
+    border-radius: 1rem;
+    box-shadow:0 1rem 1rem rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+   overflow: hidden;
+   width:15rem;
+   backdrop-filter:blur(1rem);
+   background-color: rgba(225,225,225,0.60);
+   border:1rem solid  rgba(225,225,225,0.18);
+   color: var(--white-text);
+   text-align:center ;
+   
+}
+
+
+.card p{
+    text-align:justify ;
+ 
+
+}
+
+.cardestudio{
+    transition: all 400ms ease;
+}
+
+.cardestudio:hover{
+    box-shadow:5px 5px 20px rgba(248, 4, 155, 0.966);
+    transform: translateY(-3%);
+
+}
+
+
+.iconestudio{
+    padding:0.5rem;
+    color:#eb0779;
+
+}
+
+.top-row{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contentt{
+    padding:2rem;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+/**************************************Todo lo de habilidades****************************************/
+.titulohabilidades{
+
+    
+    font-size:30px;
+    font-weight: 300px;
+    color: #fff;
+    text-align: center;
+    margin-bottom:-15px;/*distancia del div superor*/
+    
+
+}
+
+.sectionhabilidades{
+
+    margin: 0;
+    padding: 3px;
+    box-sizing:border-box ;
+    font-family:' Roboto', sans-serif;
+    background-color: rgb(71, 1, 71);
+    min-height:80vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;  
+
+       }
+
+
+       .container{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap:15px;/*especifica los canales entre las filas y las columnas de la cuadrícula*/
+    }
+
+    .container .card{
+        position: relative;
+        width: 300px;
+        height:300px;
+        background-color: rgba(225,0,0,0.00);/*Color transparente*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .container .card .percent{
+
+        position: relative;
+        width:150px;
+        height:150px;
+
+
+    }
+    
+    .container .card .percent svg{
+        position: relative;
+        width:150px;
+        height:150px;
+        /* background:red;  se utliza para ver la diemsion del circulo referente a el div que lo contiene */
+        transform: rotate(270deg);/*para que tenga punto inicio desde la mitad superior  eje y y de ahi comience a llenar el porcentaje*/
+
+
+    }
+
+    .container .card .percent svg circle {
+
+        width:100%;
+        height:100%;
+        fill:transparent;/*para  el circulo del centro */
+        stroke-width: 2;/*para el delineado del circulo*/
+        stroke: #f1efef;/*para el color de la linea del circulo*/
+        transform: translate(5px,5px);/* para que quede bien en el centro repecto a el div*/
+    }
+
+    .container .card .percent svg circle:nth-child(2) /* elecciona todos los hijos pares, se ponen 2 por dos circulos*/{
+        stroke: var(--clr);
+        stroke-dasharray:440;
+        stroke-dashoffset: calc(440 - (440 * var(--num))/100);
+
+    }
+
+    .number{
+        position: absolute;
+        inset:0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .number h2{
+        display: flex;
+        justify-self:center;
+        align-items: center;
+        color: #fff;
+        font-weight: 700;
+        font-size: 2.5em;
+
+    }
+.number h2 span{ color: #fff;
+        font-weight: 700;
+        font-size: 0.5em;
+}
+
+.number p{
+    font-weight:300;
+    font-size: 0.75em;
+    letter-spacing: 2px;
+    text-transform:uppercase;
+    color:rgba(225,225,225,0.75);
+   
+
+}
+
+
+/**********************************************Todo lo de idiomas******************************************/
+
+.sectidiomas{
+
+    margin: 0;
+    padding:0;
+    font-family:'Open Sans', sans-serif;
+    /* background-color: rgb(146, 96, 135); */
+    background-image:url(/img/pizap.jpg);
+    background-repeat:repeat-x;
+    height:42vh;
+     position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+}
+
+  .cardidiomas{
+    border-radius: 1rem;
+    box-shadow:0 1rem 1rem rgba(0,0,0,0.2);
+    display: flex; /*elemento flexible para alterar sus dimensiones y llenar el espacio disponible*/
+    flex-direction: column;
+    overflow: hidden;/*si recortar contenido, dibujar barras de desplazamiento o mostrar el contenido excedente en un elemento a nivel de bloque*/
+    width:25rem;
+    height:15rem;
+    align-items: center;
+    backdrop-filter:blur(1rem);
+    background-color: rgba(225,225,225,0.60);
+    border:1rem solid  rgba(225,225,225,0.18);
+    color: var(--white-text);
+   text-align:center ;
+   padding:3%;
+} 
+ 
+.cardidiomas h2{
+    margin:-3%;
+    padding-top:-85%;
+    color: #4d0686;
+}
+
+
+.idioma {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7px;
+    margin-top:15px;
+  }
+  .idioma .stars {
+    margin: 0;
+    padding-left:15px;
+    display: flex;
+  }
+
+  .lista {
+    margin: 0;
+    padding: 0;
+  }
+  .lista > li {
+    list-style: none;
+    
+  }
+  .idioma .stars li {
+    list-style: none;
+    color: #f63797;
+    
+  }
+  .idioma .stars li .fa-solid {
+    color: #f63797;
+  }
+
+  .cardidiomas span{
+    color:#4e0439;
+  }
+  /**************************************************************FOOTER*****************************************/
+  footer{
+    background:#f2f2f2;
+    padding:60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;/*para que nada se salga del footer */
+    
+  }
+
+  .contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom:50px;/*para separar la linea de los textos*/
+    border-bottom:1px solid rgb(248, 44, 163) ;
+  }
+  .contec-foo{
+    text-align: center; }
+
+    .contec-foo h4{
+        color: #800040; /*color text h4*/
+        border-bottom: 3px solid #800040;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+    }
+
+    .contec-foo p{
+        color: #eb0779; /*color text h4*/
+    }
+
+    .titulo-final{
+        text-align: center;
+        font-size:24px;
+        margin:20px 0 0 0;
+        color: #9e9797;
+
+    }
+    /***************************************************Responsive *****************************************/
+
+    @media screen and (max-width:900px){
+        heder{
+            background-position: center;
+        }
+
+        
+
+        .sectionhabilidades{
+
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .estudiocontenedor{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .contenedor{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+        /*Experiencia laboral */
+        .contenedor-sobre-nosotros{
+
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container{
+
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sobre-nosotros .contenido-textos{
+            width: 90%;
+            text-align:justify;
+        }
+        .imagen-about-us{
+            width:90%;
+           
+
+        }
+        
+    }
+    @media screen and( max-width:500px){
+
+        heder{
+            background-position: center;
+            margin: 0;
+            display:flexbox;
+            
+        }
+
+        nav{
+            text-align: center;
+            padding:30px 0 0 0;
+            display:flexbox;
+
+        }
+
+        nav>a{/*Enlaces del menu*/
+            margin-right: 5px;
+        }
+
+        .textos-header h1{
+            font-size:35px;
+        }
+
+        .textos-header h2{
+            font-size:20px;
+        }
+
+        .imagen-about-us{
+            margin-bottom:60px;
+            width:90%;
+        }
+
+        .sobre-nosotros .contenido-textos{
+            width: 95%;
+
+        }
+        /*footer*/
+        .contenedor-footer{
+            flex-direction: column;
+            color: #460480;
+        }
+        
+        
+
+    }

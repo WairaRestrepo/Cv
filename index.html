@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>My CV</title>
+            <link rel="stylesheet" href="css/style.css">
+            <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300;1,400;1,500&display=swap" rel="stylesheet">
+            
+            <script src="https://kit.fontawesome.com/af2c3ea27a.js" crossorigin="anonymous"></script>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+            
+            
+        </head>
+    <body>
+        <header>
+            <nav>
+                <a href="#Perfil">Perfil </a>
+                <a href="#Experiencia">Experiencia </a>
+                <a href="#Educacion">Educacion</a>
+                <a href="#Habilidades">Habilidades</a>
+                <a href="#Contacto">Contacto</a>
+            </nav>
+            <section class="textos-header">
+                <h1>Bienvenido a mi hoja de vida </h1>
+                <h2>Gracias por estar aquí</h2>
+            </section>
+            <div class="wave" style="height: 150px; overflow: hidden;" >
+                <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                    <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;">
+                    </path>
+                </svg>
+            </div>
+        </header>
+        <main class="main">
+            <img src="img/wai.jpg" id="Perfil"  class="circulofoto" alt="foto">
+            <section class="clientes contenedor ">
+                <h2  class="titulo">Hola, soy Waira Alejandra Restrepo Agudelo </h2>
+            <div class="contenido-texto-card">
+                
+                <p>Soy una entusiasta por el mundo de la tecnología y desarrollo web, es por esto que he decidido comenzar de manera formal mis estudios en este ámbito con el fin de trazar un mapa donde tendré un punto de partida, para así lograr cada objetivo y aprendizaje que me permitirá alcanzar cada vez más el punto de llegada (Ser una desarrolladora frontend). </p> 
+                </div>
+                </br>
+                <h4>¡Es un placer tenerte aquí!</h4>
+            </div>
+            </section>
+            
+            <section  id="Experiencia">
+            <div class="contenedor sobre-nosotros">
+                    <h2 id="experiencia"class="titulo">Experiencia laboral </h2>
+                <div class="contenedor-sobre-nosotros">
+                        <img src="./img/expe.jpg" alt="" class="imagen-about-us">
+                    <div class="contenido-textos">
+                        <h3>
+                            <span>1</span>Experiencias mas recientes:
+                            <!-- se pone  span para poderle dar  color a el numero 1-->
+                        </h3>
+                        
+                            <h5>Alcaldia del municipio de Copacabana-Antioquia </h5>
+                            <p>En esta entidad realice mis prácticas profesionales de Psicología con un enfoque social
+                            <br> Enero 2021-Diciembre2021.</p>
+                        <h3>
+                            <span>2</span>Experiencias mas antiguas:
+                        </h3>
+                        
+                        <h5>Contact-center Grupo Konecta  </h5>
+                        
+                        <p>En esta entidad labore en el Área de seguridad bancaria y fraudes.
+                            <br> Abril 2019-Agosto 2021.
+                        </p>
+                        
+                    </div>
+
+                        <div class="colors">
+                        <span class="active" onclick="changeColor('#34eebc')"  style="--clr:#34eebc;"></span>
+                        <span  onclick="changeColor('#8ab5f7')" style="--clr:#8ab5f7;"></span>
+                        <span  onclick="changeColor('#f39ec8')" style="--clr:#f39ec8;"></span>
+                        <span  onclick="changeColor('#fff')" style="--clr:#fff;"></span>
+        
+        
+                        </div>
+
+                        <script>
+                            function changeColor(color){
+                                document.body.style.background= color;
+                            }
+                        </script>
+                </div>
+
+             
+            </div>
+            
+         
+
+            </section>
+
+            <!-------------------------------------------------------------- cards  Estudio --------------------------------------------------------------->
+            <section  id="Educacion" class="estudiocontenedor ">
+                
+                <h2 class="titulo">Nivel educativo</h2>
+
+                <div class="Containerr">
+                    <div class="card cardestudio">
+                        <div class="top-row background-top-row">
+                            <i class="fa-solid fa-book-open-reader iconestudio"></i>
+                            <h3>Bachillerato</h3><br>
+                            <h4>Jose Miguel de Restrepo y Puerta</h4> 
+                        </div>
+                        <div class="contentt">
+                        <p>Curse en esta institucion educativa desde el  años 2008 hasta el 2013</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+                <div class="Containerr">
+                    <div class="card cardestudio">
+                        <div class="top-row background-top-row">
+                            <i class="fa-regular fa-star iconestudio"></i>
+                            <h3>Universidad </h3><br>
+                            <h4>Tecnologico de Antioquia</h4> 
+                        </div>
+                        <div class="contentt">
+                        <p>Curse en esta institucion educativa desde el 2017-2021</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wavee" style="height: 150px; overflow: hidden;" >
+                    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                        <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;">
+                        </path>
+                    </svg>
+                </div>
+            </section>
+            
+            <!----------------------------------------Habilidades --------------------------------------------------------->
+            
+            <section id="Habilidades" class="sectionhabilidades">
+                
+                <h2 class="titulohabilidades">Habilidades</h2>
+              <div class="container">
+
+                <div class="card">
+                    <div class="percent" style="--clr:#fc04f0;--num:50;">
+                        <div class="dot"></div>
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="number">
+                            <h2>50<span>%</span></h2>
+                            <p>Html 5</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="percent" style="--clr:#0ef721;--num:30;">
+                        <div class="dot"></div>
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="number">
+                            <h2>30<span>%</span></h2>
+                            <p>css</p>
+                        </div>
+                    </div>
+                </div>
+               
+
+
+                <div class="card">
+                    <div class="percent" style="--clr:#fc0480;--num:35;">
+                        <div class="dot"></div>
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="number">
+                            <h2>35<span>%</span></h2>
+                            <p>Javascript</p>
+                        </div>
+                    </div>
+                </div>
+               
+
+
+
+                <div class="card">
+                    <div class="percent" style="--clr:#3a04fc;--num:5;"><!--Se pone en la variable num el valor del porcent-->
+                        <div class="dot"></div>
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="number">
+                            <h2>5<span>%</span></h2>
+                            <p>Angular</p>
+                        </div>
+                    </div>
+                </div>
+               
+               
+            </div>
+
+                
+                
+            </section>
+
+    <!-----------------------------------------------IDIOMAS--------------------------------------------------------->
+            <section  class="sectidiomas">
+                
+                <div class="cardidiomas">
+                    <h2><i class="fa-solid fa-comment-dots"></i> Idiomas</h2>
+                   
+                    <ul class="lista">
+                      <li class="item">
+                        <div class="idioma">
+                          <span>Español</span>
+                          <ul class="stars">
+                            <li><i class="fa-regular fa-star fa-solid"></i></li>
+                            <li><i class="fa-regular fa-star fa-solid"></i></li>
+                            <li><i class="fa-regular fa-star fa-solid"></i></li>
+                            <li><i class="fa-regular fa-star fa-solid"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                          </ul>
+                        </div>
+                        <div class="idioma">
+                          <span>Inglés</span>
+                          <ul class="stars">
+                            <li><i class="fa-regular fa-star fa-solid"></i></li>
+                            <li><i class="fa-regular fa-star "></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                
+                
+            </section>
+        </main>
+
+                <footer>
+                    <div class="contenedor-footer">
+                        <div id="Contacto"class="contec-foo">
+                            <h4>Phone</h4>
+                            <p>3194658225</p>
+                        </div>
+                        <div class="contec-foo">
+                            <h4>email</h4>
+                            <p>wairarestrepo@gmail.com</p>
+                        </div>
+
+                        <div class="contec-foo">
+                            <h4>Github.</h4>
+                            <p>WairaRestrepo</p>
+                        </div>
+                    </div>
+
+                    <h2 class="titulo-final">&copy; Waira Restrepo</h2>
+
+                </footer>
+
+    </body>   
+
+</html>
